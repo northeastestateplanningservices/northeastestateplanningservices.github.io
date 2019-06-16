@@ -1,0 +1,32 @@
+url: https://y7kim.github.io
+baseurl: /agency-jekyll-theme/
+
+# Site settings
+title: North East Estate Planning Services
+email: dan@northeastestateplanningservices.co.uk
+description: "At North East Estate Planning Services we provide all aspects of later life planning to include, Wills, LPOA and affordable funeral plans."
+
+
+# Team names, titles and social links
+people:
+- name: Dan Buckley
+  pic: dan
+  position: Estate Planner/ Paralegal
+  social:
+    - title: linkedin
+      url: https://www.linkedin.com/in/dan-buckley-676b98105/
+
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: facebook
+    url: https://www.facebook.com/North-east-estate-planning-services-427313244633358/
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+
+# Build settings
+markdown: kramdown
+permalink: pretty
