@@ -9,12 +9,10 @@ description: "At North East Estate Planning Services we provide all aspects of l
 
 # Team names, titles and social links
 people:
-- name: Dan Buckley
-  pic: dan
+- name: Sue
+  pic: 1
   position: Estate Planner/ Paralegal
   social:
-    - title: linkedin
-      url: https://www.linkedin.com/in/dan-buckley-676b98105/
 
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
