@@ -4,6 +4,15 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
 
+
+ .image-cropper {
+    width: 170px;
+    height: 170px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
 body {
     overflow-x: hidden;
     font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -19,6 +28,11 @@ body {
 }
 
 p {
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+li {
     font-size: 14px;
     line-height: 1.75;
 }
@@ -167,24 +181,24 @@ fieldset[disabled] .btn-xl.active {
 
 .btn-xl .badge {
     color: #{{ site.data.template.color.primary }};
-    background-color: #fff;
+    background-color: #{{ site.data.template.color.primary }};
 }
 
 .navbar-default {
     border-color: transparent;
-    background-color: #222;
+    background-color: #{{ site.data.template.color.primary }};
 }
 
 .navbar-default .navbar-brand {
-    font-family: 'Karla', sans-serif;
-    color: #{{ site.data.template.color.primary }};
+    font-family: 'Righteous', sans-serif;
+    color: #FFF;
 }
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
-    color: #{{ site.data.template.color.secondary }};
+    color: #F4DECB;
 }
 
 .navbar-default .navbar-collapse {
@@ -219,7 +233,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #{{ site.data.template.color.primary }};
+    color: #F4DECB;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -257,7 +271,7 @@ fieldset[disabled] .btn-xl.active {
 
     .navbar-default.navbar-shrink {
         padding: 10px 0;
-        background-color: #222;
+        background-color: #{{ site.data.template.color.primary }};
     }
 
     .navbar-default.navbar-shrink .navbar-brand {
@@ -269,7 +283,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/background.jpg');
+    background-image: url('{{ site.baseurl }}/img/backgroundfade.png');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -300,6 +314,13 @@ header .intro-text .intro-heading {
     line-height: 50px;
 }
 
+.img-fluid {
+
+    max-width: 100%;
+    max-height: 300px;
+
+}
+
 @media(min-width:768px) {
     header .intro-text {
         padding-top: 300px;
@@ -325,7 +346,7 @@ header .intro-text .intro-heading {
 }
 
 section {
-    padding: 100px 0;
+    padding: 20px 0;
 }
 
 section h2.section-heading {
@@ -345,7 +366,7 @@ section h3.section-subheading {
 
 @media(min-width:768px) {
     section {
-        padding: 150px 0;
+        padding: 50px 0;
     }
 }
 
@@ -864,4 +885,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: #{{ site.data.template.color.primary }};
+}
+
+.big-icon {
+    font-size: 9em;
 }
