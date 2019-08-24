@@ -15,7 +15,7 @@
 
 body {
     overflow-x: hidden;
-    font-family: "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: #{{ site.data.template.font.secondary }};
     color: #{{ site.data.template.color.secondary-dark }};
 }
 
@@ -28,17 +28,22 @@ body {
 }
 
 p {
-    font-size: 14px;
-    line-height: 1.75;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 li {
-    font-size: 14px;
-    line-height: 1.75;
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 p.large {
     font-size: 16px;
+}
+
+.page-scroll {
+    font-size: 14px;
+    line-height: 1.5;
 }
 
 a,
@@ -283,7 +288,7 @@ header {
     text-align: center;
     color: #fff;
     background-attachment: scroll;
-    background-image: url('{{ site.baseurl }}/img/backgroundfade.png');
+    background-image: url('{{ site.baseurl }}/img/background.jpg');
     background-position: center center;
     background-repeat: none;
     -webkit-background-size: cover;
@@ -867,12 +872,12 @@ ul.social-buttons li a:active {
 
 ::-moz-selection {
     text-shadow: none;
-    background: #{{ site.data.template.color.primary }};
+    background: #{{ site.data.template.color.secondary }};
 }
 
 ::selection {
     text-shadow: none;
-    background: #{{ site.data.template.color.primary }};
+    background: #{{ site.data.template.color.secondary }};
 }
 
 img::selection {
