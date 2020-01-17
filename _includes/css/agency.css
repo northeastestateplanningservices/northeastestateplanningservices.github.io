@@ -683,7 +683,10 @@ aside.clients img {
 }
 
 section#contact {
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ), url('{{ site.baseurl }}/img/map-image.png') no-repeat center center fixed;
+    background-color: #222;
+    background-image: url('{{ site.baseurl }}/img/map-image.png');
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 section#contact .section-heading {
